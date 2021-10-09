@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Частным лицам</title>
@@ -22,7 +23,7 @@
             <li class="ul_in_line">Минск</li>
 
             <li class="ul_in_line"><img src="/image/svg/show.svg" alt="">
-                <img class="img_svg" src="/image/svg/phone_outline.svg" alt="">
+                <img src="/image/svg/phone_outline.svg" alt="">
                 <img src="/image/svg/search.svg" alt="">
                 <img src="/image/svg/hamburger.svg" alt="">
             </li>
@@ -41,7 +42,7 @@
     </header>
     <main>
         <div class="div_nom1">
-            <p class="style_for_text padd1">Пусть Ваши мечты сбудутся! 刻 舟 求 剑</p>
+            <p class="style_for_text padd1">Пусть Ваши мечты сбудутся!</p> <!-- 刻 舟 求 剑-->
             <p class="style_for_text2 padd2">Кредит на потребительские нужды. <br> Рассмотрение заявки - до 60 минут!
             </p>
             <div class="padd2"> <input class="color_for_bot padd3" type="submit" value="Подробнее">
@@ -53,9 +54,47 @@
                     <p class="content_article">Используйте самые современные способы оплаты.</p>
                     <p class="content_article_p">Доставка по всей Беларуси<br> Cashback до 20% </p>
                 </div>
-                <div> <input class=" right_circle_but" type="submit" value=">"></div>
+                <div>
+                    <input id="showContent" class=" right_circle_but" type="submit" value=">">
+                </div>
+
+                <div id="content" class="hidd_div">
+                    <p class="hidd_div_hedd">Выгодные вклады</p>
+                    <div class="hidd_div_text">
+
+                        <p>Подробнее о вкладах</p>
+                    </div>
+
+                    <div class="hidd_div_form">
+                        <select name="symm">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                        <select name="symm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">6</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+
+                        </select>
+                        <p>11% годовых</p>
+                        <p>2047,57 BYN</p>
+                        <p>расчет имеет примерный характер и основывается на
+                            условиях вклада «На 3 месяца отзывный - выгодный»</p>
+                    </div>
+                    <div class="hidd_div_but">
+                        <button id="hideContent" class="color_for_bot">Скрыть</button>
+                    </div>
+                </div>
             </article>
-            </article>
+
             <article class="article_inf">
                 <div>
                     <p class="content_article">Хорошо вложенные деньги всегда работают на Вас.</p>
@@ -80,14 +119,108 @@
             <img class="phon2" src="image/pngegg.png" alt="">
         </div>
         <div class="div_c_img">
-            <img src="/image/Rectangle 19.png" alt="">
+            <!--<img src="/image/Rectangle 19.png" alt="">
             <img src="/image/Rectangle 20.png" alt="">
             <img src="/image/Rectangle 21.png" alt="">
-            <img src="/image/Rectangle 18.png" alt="">
+            <img src="/image/Rectangle 18.png" alt=""> -->
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 18.png" alt="" />
+                    <figcaption>
+                        <h3>Депозиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 19.png" alt="" />
+                    <figcaption>
+                        <h3>Депозиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 20.png" alt="" />
+                    <figcaption>
+                        <h3>Депозиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 21.png" alt="" />
+                    <figcaption>
+                        <h3>Депозиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+
         </div>
 
         <div class="div_white">
+            <div class="div_flex">
+                <div class="flex_elements">
+                    <h4>Курсы валют</h4>
+                    <p>По картам Наличные НБРБ</p>
+                    <hr>
 
+                    <div>
+                        <ul class="hr">
+                            <li>Наименование </li>
+                            <li>Банк покупает</li>
+                            <li>Банк продает</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li>1 USD</li>
+                            <li>2.493</li>
+                            <li>2.523</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li>1 EUR</li>
+                            <li>2.953</li>
+                            <li>2.99</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li>100 RUB</li>
+                            <li>3.364</li>
+                            <li>3.463</li>
+                        </ul>
+                    </div>
+
+                    <p>Все курсы валют</p>
+                </div>
+
+                <div class="flex_elements">Конвертер валют</div>
+
+
+                <div class="flex_elements">Драгоценные металлы
+                    <div class="flex_range">
+                        <input id="example1" type="range" min="1" max="100" step="1"
+                            onchange="textbox1.value = example1.value" />
+                        <input id="textbox1" type="text" />
+                    </div>
+
+                </div>
+            </div>
         </div>
     </main>
     <footer class="foot_flex">
@@ -120,18 +253,55 @@
         <div class="foot_divs">
             <ul>
                 <li class="foot_li_first">Контакт-центр</li>
-                <li class="foot_li">
-                    Контакт-центр</li>
+                <li class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (44) 123-45-67 <br><span class="foot_small_text">
+                        А1</span></li>
+                <li class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (33) 123-45-67 <br><span class="foot_small_text">
+                        МТС</span></li>
+                <li class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (25) 123-45-67<br><span class="foot_small_text">
+                        Life:) <br>* Звонок платный в соответствии 
+                        с тарифами оператора мобильной связи</span>
+
+                    </li>
+                
             </ul>
         </div>
         <div class="foot_divs">
             <li class="foot_li_first">
                 Мобильное приложение
             </li>
+            <li class="foot_li">
+                <img class="foot_li_app" src="/image/Aple.PNG" alt="">
+                </li>
+                <li class="foot_li">
+                    <img class="foot_li_app"src="/image/play.PNG" alt="">
+                    </li>
+                    <li class="foot_li">
+                        <img class="svg_social_network" src="/image/svg/facebook.svg" alt="">
+                        <img class="svg_social_network" src="/image/svg/Twitter.svg" alt="">
+                        <img class="svg_social_network" src="/image/svg/icons8-вконтакте.svg" alt="">
+                        <img class="svg_social_network" src="/image/svg/youtube.svg" alt="">
+                        <img class="svg_social_network" src="/image/svg/instagram.svg" alt="">
+                        </li>
             </ul>
         </div>
         </ul>
     </footer>
+    <script>
+        let content = document.getElementById("content")
+        let show = document.getElementById("showContent")
+        let hide = document.getElementById("hideContent")
+
+        show.addEventListener("click", () => {
+            content.style.display = "block"
+        })
+
+        hide.addEventListener("click", () => {
+            content.style.display = "none"
+        })
+    </script>
 </body>
 
 </html>

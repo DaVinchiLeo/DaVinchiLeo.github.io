@@ -1,11 +1,21 @@
 html {
   background-color: #181727;
+  display: grid;
 }
+
 .text {
   color: #e1d5d3;
 }
+header,main,footer{
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto; 
+}
 .img_svg {
-  fill: #e1d5d3;
+  width: 25px;
+  height: 25px;
+
 }
 .glav_menu {
   border: solid 1px black;
@@ -44,7 +54,7 @@ html {
   color: #fcfcfc;
   border-radius: 25px;
   border: none;
-  font-family: "Noto Sans TC";
+  font-family: "Nunito";
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
@@ -52,12 +62,17 @@ html {
   letter-spacing: 0em;
   text-align: left;
   height: 35px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
+.color_for_bot:hover{
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
+}
 .div_nom1 {
   background: url(image/Rectangle27.png) left, url(image/8YG31Xn4dSw.png) right;
   background-repeat: no-repeat;
   height: 431px;
+
 }
 .padd1 {
   padding: 66px 0 0 120px;
@@ -66,13 +81,14 @@ html {
   padding: 33px 0 0 120px;
 }
 .padd3 {
-  padding: 10px 60px 10px 60px;
+  padding: 0px 60px 0px 60px;
 }
 .style_for_text {
-  font-family: "Noto Sans TC";
+ /*font-family: "Noto Sans TC";*/
+font-family:"Nunito" ;
   font-size: 36px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 52px;
   letter-spacing: 0em;
   text-align: left;
@@ -105,7 +121,7 @@ html {
 .phon2 {
   position: absolute;
   width: 250px;
-  left: 1100px;
+  right: 10px;
   top: 100px;
 }
 
@@ -117,10 +133,12 @@ html {
   border-radius: 5px;
   margin: 15px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .content_article {
-  padding: 17px 0 0 40px;
+  padding: 0 0 0 40px;
   font-size: 22px;
 }
 .content_article_p {
@@ -134,36 +152,282 @@ html {
   color: #fcfcfc;
   border-radius: 25px;
   border: none;
-  font-family: "Noto Sans TC";
+  font-family: "Nunito";
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: center;
-  height: 35px;
-  width: 35px;
+  height: 50px;
+  width: 50px;
+  margin-right: 120px;
 }
+.right_circle_but:hover{
+  
+    color: rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
+  
+}
+.hidd_div{
+  width: calc(100% - 200px);
+  max-width: 1200px;
+  height: 542px;
 
+  display:flex; 
+  flex-wrap: wrap;
+  border-radius: 3px;
+  position: absolute;
+  left: 150px;
+  background-image: url(/image/Rectangle\ 10.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.hidd_div_hedd{
+  width: 100%;
+  text-align: left;
+  padding-left: 50px;
+  padding-top:10px;
+}
+.hidd_div_text{
+  width: 30%;
+  height: 100px;
+  padding-left: 50px;
+}
+.hidd_div_form{
+  width: 70%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.hidd_div_form select{
+ margin: 25px;
+ 
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  background-color: black;
+  color: #cdc4c2;
+}
+.hidd_div_form p{
+  padding:25px;
+  width: 40%;
+  padding-left: 25px;
+}
+.hidd_div_but{
+  width: 100%;
+  text-align: center;
+}
+/*-----------------изображения с ховером-------------------------------------*/
 .div_c_img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 25px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .div_c_img img {
   width: 572px;
   height: 292px;
-  margin: 55px auto;
+ 
 }
+
+*, *:after, *:before { 
+	box-sizing: border-box; 
+}
+
+.hover-text-one {
+	/*overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;*/
+  padding: 50px;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+    opacity: 0.8;
+    
+}
+.hover-text-one figure figcaption {
+	padding: 20px;
+	color: #fff;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 65%;
+	left: 0%;
+	width: 100%;
+	/*height: 100%;*/
+    background-color: #fe3406;
+    opacity: 0.4;
+    }
+
+.hover-text-one figure h3 {
+font-weight: 300;
+}
+
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+
+
+/*Анимашка*/
+figure.effect-text-three:hover img {
+	opacity: 0.4;
+    background-color: #fe3406;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.hover-text-one figure:hover figcaption{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+    transition: transform 0.35s;
+    background-color: #fe3406;
+    opacity: 0.4;
+   
+    }
+figure.effect-text-three figcaption {
+	text-align: left;
+}
+figure.effect-text-three h3 {
+	position: relative;
+	overflow: hidden;
+	
+}
+figure.effect-text-three h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	
+}
+figure.effect-text-three p {
+	padding: 10px 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0, 100%,0);
+}
+figure.effect-text-three:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/*-------------------валюта----------------------------*/
 .div_white {
   width: 100%;
-  height: 500px;
+  max-width: 1440px;
+  height: 100%;
   background-color: #ffffff;
   position: relative;
 }
+.div_flex {
+  
+  display: flex;
+  flex-wrap: wrap;
 
+  justify-content: center;
+  align-self: center;
+  
+}
+
+.flex_elements {
+  background: #fff;
+  border: solid 1px;
+  width: 33%;
+  max-width: 483px;
+  height: 444px;
+  padding: 5px;
+  position: relative;
+
+}
+
+.slider {
+  background: linear-gradient(to right, #94525c, #14aad7);
+  ;
+}
+
+ul.hr {
+  margin: 0;
+  /* Обнуляем значение отступов */
+  padding: 4px;
+  /* Значение полей */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.hr li {
+  display: inline;
+  /* Отображать как строчный элемент */
+  margin-right: 5px;
+  /* Отступ слева */
+  border: 1px solid #000;
+  /* Рамка вокруг текста */
+  padding: 3px;
+  /* Поля вокруг текста */
+  width: 210px;
+  text-align: end;
+}
+
+ul.hr li img {
+  width: 20px;
+  height: 10px;
+}
+
+.flex_for_currency {
+  display: flex;
+  justify-content: end;
+
+}
+
+.progress {
+  width: 100%;
+  background-color: rgb(21, 255, 33);
+}
+
+/*---------------------------------------*/
+
+
+#textbox1{
+width: 50px;
+}
+.flex_range{
+display: flex;
+justify-self: center;
+}
+
+/*------------------------------------------*/
+/*https://codepen.io/corvustristis/pen/VaPMRV      на слайдер */
+
+/*-----------------------------------------------*/
+
+/* ------------------------подвал------------------------------------*/
 .foot_li_first {
   color: #fcfcfc;
   list-style: none;
@@ -174,6 +438,7 @@ html {
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  padding-bottom: 25px;
 }
 .foot_li {
   color: #cdc4c2;
@@ -185,6 +450,18 @@ html {
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+  width: 220px;
+}
+.foot_li_app{
+  width: 152px;
+  height: 42px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  
+}
+.svg_social_network{
+  width: 24px;
+  height: 24px;
 }
 .foot_flex {
   display: flex;
@@ -195,3 +472,8 @@ html {
 .foot_divs {
   padding: 30px;
 }
+.foot_small_text{
+  font-size: 15px;
+  line-height: 0;
+}
+
