@@ -2,24 +2,60 @@ html {
   background-color: #181727;
   display: grid;
 }
+a{
+  text-decoration:none;
 
+}
+a:hover {
+  border-top: solid 3px #fe3406;
+  border-radius: 2px;
+  filter: drop-shadow(0 0 5px #fe3406);
+  cursor: pointer;
+}
+.a_logo:hover{
+  filter: drop-shadow(0 0 5px #fe3406);
+  cursor: pointer;
+}
 .text {
   color: #e1d5d3;
 }
-header,main,footer{
+header,
+main,
+footer {
   display: block;
   width: 100%;
   max-width: 1440px;
-  margin: 0px auto; 
+  margin: 0px auto;
 }
 .img_svg {
   width: 25px;
   height: 25px;
-
 }
+
 .glav_menu {
-  border: solid 1px black;
   padding-left: 120px;
+}
+.top_menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: blanchedalmond;
+  padding: 25px;
+  position: relative;
+}
+.top_menu div {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.top_menu a {
+  text-decoration: none;
+  font-family: "Nunito";
+  font-size: 17px;
+  color: #fcfcfc;
 }
 .ul_in_line {
   list-style: none;
@@ -30,7 +66,7 @@ header,main,footer{
   right: 50px;
 }
 .menu_li {
-  font-family: "Noto Sans TC";
+  font-family: "Nunito";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +74,10 @@ header,main,footer{
   letter-spacing: 0em;
   padding-right: 50px;
 }
-
+.menu_li a {
+  text-decoration: none;
+  color: #000;
+}
 .white_div {
   position: relative;
   display: flex;
@@ -62,9 +101,9 @@ header,main,footer{
   letter-spacing: 0em;
   text-align: left;
   height: 35px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.color_for_bot:hover{
+.color_for_bot:hover {
   color: rgb(0, 0, 0);
   border: solid 2px rgb(0, 0, 0);
 }
@@ -72,7 +111,12 @@ header,main,footer{
   background: url(image/Rectangle27.png) left, url(image/8YG31Xn4dSw.png) right;
   background-repeat: no-repeat;
   height: 431px;
-
+}
+.div_nom2{
+  background:url(image/komp.png) right;
+  background-repeat: no-repeat;
+  background-size:  100%;
+  height: 431px;
 }
 .padd1 {
   padding: 66px 0 0 120px;
@@ -84,8 +128,7 @@ header,main,footer{
   padding: 0px 60px 0px 60px;
 }
 .style_for_text {
- /*font-family: "Noto Sans TC";*/
-font-family:"Nunito" ;
+  font-family: "Nunito";
   font-size: 36px;
   font-style: normal;
   font-weight: 800;
@@ -93,24 +136,44 @@ font-family:"Nunito" ;
   letter-spacing: 0em;
   text-align: left;
 }
+.style_for_text_2 {
+  font-family: "Nunito";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cdc4c2;
+}
 .style_for_text2 {
-  font-family: "Noto Sans TC";
-  font-size: 22px;
+  font-family: "Nunito";
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
 }
+.style_for_text2_2 {
+  font-family: "Nunito";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #cdc4c2;
+}
 .div_orenge {
   width: 100%;
   height: 500px;
   background-color: #fe3406;
+  color: #fcfcfc;
   position: relative;
 }
 .razmerni_div {
-  width: 450px;
-  height: 120px;
+  width: 550px;
 }
 .phon1 {
   position: absolute;
@@ -128,6 +191,7 @@ font-family:"Nunito" ;
 .content {
 }
 .article_inf {
+  font-family: "Nunito";
   height: 150px;
   background: #fcfcfc;
   border-radius: 5px;
@@ -163,18 +227,16 @@ font-family:"Nunito" ;
   width: 50px;
   margin-right: 120px;
 }
-.right_circle_but:hover{
-  
-    color: rgb(0, 0, 0);
-    border: solid 2px rgb(0, 0, 0);
-  
+.right_circle_but:hover {
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
 }
-.hidd_div{
+.hidd_div {
   width: calc(100% - 200px);
   max-width: 1200px;
   height: 542px;
-
-  display:flex; 
+  visibility: hidden;
+  display: flex;
   flex-wrap: wrap;
   border-radius: 3px;
   position: absolute;
@@ -183,38 +245,46 @@ font-family:"Nunito" ;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.hidd_div_hedd{
+.news {
+  width: 100%;
+  font-family: "Nunito";
+  font-size: 36px;
+  font-style: normal;
+  color: #cdc4c2;
+  padding-left: 50px;
+}
+.hidd_div_hedd {
   width: 100%;
   text-align: left;
   padding-left: 50px;
-  padding-top:10px;
+  padding-top: 10px;
 }
-.hidd_div_text{
+.hidd_div_text {
   width: 30%;
   height: 100px;
   padding-left: 50px;
 }
-.hidd_div_form{
+.hidd_div_form {
   width: 70%;
   height: 100px;
   display: flex;
   flex-wrap: wrap;
 }
-.hidd_div_form select{
- margin: 25px;
- 
+.hidd_div_form select {
+  margin: 25px;
+
   width: 250px;
   height: 50px;
   font-size: 25px;
   background-color: black;
   color: #cdc4c2;
 }
-.hidd_div_form p{
-  padding:25px;
+.hidd_div_form p {
+  padding: 25px;
   width: 40%;
   padding-left: 25px;
 }
-.hidd_div_but{
+.hidd_div_but {
   width: 100%;
   text-align: center;
 }
@@ -230,113 +300,145 @@ font-family:"Nunito" ;
 .div_c_img img {
   width: 572px;
   height: 292px;
- 
 }
 
-*, *:after, *:before { 
-	box-sizing: border-box; 
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
-.hover-text-one {
-	/*overflow: hidden;
-	margin: 0;
-	width: 100%;
-	list-style: none;
-	text-align: center;*/
+.hover-text-one,
+.hover-text-one2 {
   padding: 50px;
 }
-.hover-text-one figure {
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	overflow: hidden;
-	text-align: center;
-	cursor: pointer;
+.hover-text-one figure,
+.hover-text-one2 figure {
+  font-family: "Nunito";
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
 }
-.hover-text-one figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-    opacity: 0.8;
-    
+.hover-text-one figure img,
+.hover-text-one2 figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8;
 }
-.hover-text-one figure figcaption {
-	padding: 20px;
-	color: #fff;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
+.hover-text-one figure figcaption,
+.hover-text-one2 figure figcaption {
+  padding: 20px;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .hover-text-one figure figcaption::before,
-.hover-text-one figure figcaption::after {
-	pointer-events: none;
+.hover-text-one figure figcaption::after,
+.hover-text-one2 figure figcaption::before,
+.hover-text-one2 figure figcaption::after {
+  pointer-events: none;
 }
-.hover-text-one figure figcaption{
-	position: absolute;
-	top: 65%;
-	left: 0%;
-	width: 100%;
-	/*height: 100%;*/
-    background-color: #fe3406;
-    opacity: 0.4;
-    }
-
-.hover-text-one figure h3 {
-font-weight: 300;
+.hover-text-one figure figcaption {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 100%;
+  background-color: #9c9c9c;
+  opacity: 0.4;
+}
+.hover-text-one2 figure figcaption {
+  position: absolute;
+  top: 65%;
+  left: 0%;
+  width: 100%;
+  background-color: #fe3406;
+  opacity: 0.4;
 }
 
 .hover-text-one figure h3,
-.hover-text-one figure p {
-	margin: 0;
+.hover-text-one2 figure h3 {
+  font-weight: 300;
 }
 
+.hover-text-one figure h3,
+.hover-text-one figure p,
+.hover-text-one2 figure h3,
+.hover-text-one2 figure p {
+  margin: 0;
+}
 
 /*Анимашка*/
 figure.effect-text-three:hover img {
-	opacity: 0.4;
-    background-color: #fe3406;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+  opacity: 0.4;
+  background-color: #9c9c9c;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-.hover-text-one figure:hover figcaption{
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-    transition: transform 0.35s;
-    background-color: #fe3406;
-    opacity: 0.4;
-   
-    }
-figure.effect-text-three figcaption {
-	text-align: left;
+figure.effect-text-three2:hover img {
+  opacity: 0.4;
+  background-color: #fe3406;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
-figure.effect-text-three h3 {
-	position: relative;
-	overflow: hidden;
-	
+.hover-text-one figure:hover figcaption {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s;
+  background-color: #9c9c9c;
+  opacity: 0.4;
 }
-figure.effect-text-three h3::after {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 3px;
-	background: #fff;
-	
+.hover-text-one2 figure:hover figcaption {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.35s;
+  background-color: #fe3406;
+  opacity: 0.4;
 }
-figure.effect-text-three p {
-	padding: 10px 0;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0, 100%,0);
+
+figure.effect-text-three figcaption,
+figure.effect-text-three2 figcaption {
+  text-align: left;
 }
-figure.effect-text-three:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+
+figure.effect-text-three h3,
+figure.effect-text-three2 h3 {
+  position: relative;
+  overflow: hidden;
+}
+figure.effect-text-three h3::after,
+figure.effect-text-three2 h3::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+}
+figure.effect-text-three p,
+figure.effect-text-three2 p {
+  padding: 10px 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+figure.effect-text-three:hover p,
+figure.effect-text-three2:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 /*-------------------валюта----------------------------*/
 .div_white {
@@ -347,15 +449,50 @@ figure.effect-text-three:hover p {
   position: relative;
 }
 .div_flex {
-  
   display: flex;
   flex-wrap: wrap;
 
   justify-content: center;
   align-self: center;
-  
+}
+.text_kurs {
+  font-family: "Nunito";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: relative;
+}
+.text_kurs span {
+  font-family: "Nunito";
+  font-size: 20px;
+  opacity: 0.5;
 }
 
+.input_mass {
+  width: 400px;
+  color: linear-gradient(70deg, blue, pink);
+}
+.last_p {
+  font-family: "Nunito";
+  font-size: 22px;
+  font-weight: 400;
+  color: #fe3406;
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
+.last_p2 {
+  font-family: "Nunito";
+  font-size: 17px;
+  font-weight: 400;
+  color: #000000;
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+}
 .flex_elements {
   background: #fff;
   border: solid 1px;
@@ -364,19 +501,17 @@ figure.effect-text-three:hover p {
   height: 444px;
   padding: 5px;
   position: relative;
-
+  font-family: "Nunito";
+  font-weight: 600;
 }
 
 .slider {
   background: linear-gradient(to right, #94525c, #14aad7);
-  ;
 }
 
 ul.hr {
   margin: 0;
-  /* Обнуляем значение отступов */
   padding: 4px;
-  /* Значение полей */
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -384,15 +519,15 @@ ul.hr {
 
 ul.hr li {
   display: inline;
-  /* Отображать как строчный элемент */
   margin-right: 5px;
-  /* Отступ слева */
-  border: 1px solid #000;
-  /* Рамка вокруг текста */
   padding: 3px;
-  /* Поля вокруг текста */
-  width: 210px;
+  width: 320px;
+  font-size: 20px;
   text-align: end;
+}
+ul.hr li:first-child {
+  text-align: start;
+  width: 320px;
 }
 
 ul.hr li img {
@@ -400,12 +535,62 @@ ul.hr li img {
   height: 10px;
 }
 
+.bank_li {
+  font-family: "Nunito";
+  font-size: 14px !important;
+}
+
 .flex_for_currency {
   display: flex;
   justify-content: end;
-
+}
+.listalka {
+  color: #181727;
+  opacity: 0.5;
+  padding: 0 25px 0 0;
+}
+.flag {
+  width: 75px;
+  height: 40px;
 }
 
+.listalka_div p {
+  padding: 32px 0 0 0;
+}
+/*--------стили для js листалки---------------*/
+.tab {
+  overflow: hidden;
+  border-bottom: 3px solid rgb(143, 143, 143);
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  border-bottom: solid 3px #fe3406;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/*-----------------------------------------*/
+#select_many {
+  width: 395px;
+  height: 60px;
+  margin: 25px 25px 0 25px;
+}
+#select_many:hover {
+  background-color: black;
+}
 .progress {
   width: 100%;
   background-color: rgb(21, 255, 33);
@@ -413,25 +598,27 @@ ul.hr li img {
 
 /*---------------------------------------*/
 
-
-#textbox1{
-width: 50px;
+#textbox1 {
+  width: 50px;
+  border: none;
 }
-.flex_range{
-display: flex;
-justify-self: center;
+.flex_range {
+  display: flex;
+  justify-self: center;
+  padding: 32px 0 0 0;
+}
+.flex_range2 {
+  display: flex;
+  justify-self: center;
 }
 
 /*------------------------------------------*/
-/*https://codepen.io/corvustristis/pen/VaPMRV      на слайдер */
-
-/*-----------------------------------------------*/
 
 /* ------------------------подвал------------------------------------*/
 .foot_li_first {
   color: #fcfcfc;
   list-style: none;
-  font-family: "Noto Sans TC";
+  font-family: "Nunito";
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -439,11 +626,12 @@ justify-self: center;
   letter-spacing: 0em;
   text-align: left;
   padding-bottom: 25px;
+  
 }
 .foot_li {
   color: #cdc4c2;
   list-style: none;
-  font-family: "Noto Sans TC";
+  font-family: "Nunito";
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
@@ -452,14 +640,13 @@ justify-self: center;
   text-align: left;
   width: 220px;
 }
-.foot_li_app{
+.foot_li_app {
   width: 152px;
   height: 42px;
   border-radius: 10px;
   margin-bottom: 25px;
-  
 }
-.svg_social_network{
+.svg_social_network {
   width: 24px;
   height: 24px;
 }
@@ -470,10 +657,23 @@ justify-self: center;
   justify-content: center;
 }
 .foot_divs {
-  padding: 30px;
+  padding: 5px;
+  margin: auto;
 }
-.foot_small_text{
+.foot_small_text {
   font-size: 15px;
   line-height: 0;
+  color: #cdc4c2;
 }
-
+/*--svg-*/
+.style_svg {
+  fill: none;
+  width: 24px;
+  height: 24px;
+}
+.style_path {
+  fill: rgb(218, 218, 218);
+}
+.style_path:hover{
+  fill:#fe3406;
+}

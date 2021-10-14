@@ -1,14 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <title>Лучший банк на свете</title>
+    <title>FeuerBank</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="top_menu">
+            <div> <img style="height:50px" src="Image/logo.png" alt=""></div>
+            <div><a href="">Частным лицам</a>
+                <a href="">Бизнесу</a>
+            </div>
+            <div><a href="">Отделение и банкоматы</a>
+                <a href="">Минск</a>
+            </div>
+
+            <div>
+                <img src="/image/svg/show.svg" alt="">
+                <img src="/image/svg/phone_outline.svg" alt="">
+                <img src="/image/svg/search.svg" alt="">
+                <img src="/image/svg/hamburger.svg" alt="">
+            </div>
+        </div>
+        <div class="white_div">
+            <ul class="glav_menu">
+                <li class="ul_in_line menu_li"><a href="">Карты</a></li>
+                <li class="ul_in_line menu_li"><a href="">Кредиты</a></li>
+                <li class="ul_in_line menu_li"><a href="">Вклады</a></li>
+                <li class="ul_in_line menu_li"><a href="">Страхование</a></li>
+                <li class="ul_in_line menu_li"><a href="">Ипотека</a></li>
+                <li class="ul_in_line menu_li"><a href="">Ещё...</a></li>
+            </ul>
+            <input class="color_for_bot position_right" type="submit" value="Интернет банкинг">
+        </div>
+    </header>
+    <main>
+        <div class="div_nom1">
+            <p class="style_for_text padd1">Пусть Ваши мечты сбудутся!</p> <!-- 刻 舟 求 剑-->
+            <p class="style_for_text2 padd2">Кредит на потребительские нужды. <br> Рассмотрение заявки - до 60 минут!
+            </p>
+            <div class="padd2"> <input class="color_for_bot padd3" type="submit" value="Подробнее">
+            </div>
+        </div>
+        <section class="content">
+            <article class="article_inf">
+                <div>
+                    <p class="content_article">Используйте самые современные способы оплаты.</p>
+                    <p class="content_article_p">Доставка по всей Беларуси<br> Cashback до 20% </p>
+                </div>
+                <div>
+                    <input id="showContent" class=" right_circle_but" type="submit" value=">">
+                </div>
+
+                <div id="Id_content" class="hidd_div">
+                    <p class="hidd_div_hedd style_for_text">Выгодные вклады</p>
+                    <div class="hidd_div_text">
+
+                        <p>Подробнее о вкладах</p>
+                    </div>
+
+                    <div class="hidd_div_form">
+                        <select name="symm">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                        <select name="symm">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">6</option>
+                            <option value="9">9</option>
+                            <option value="12">12</option>
+                            <option value="18">18</option>
+                            <option value="24">24</option>
+                            <option value="36">36</option>
+
+                        </select>
+                        <p>11% годовых</p>
+                        <p>2047,57 BYN</p>
+                        <p>расчет имеет примерный характер и основывается на
+                            условиях вклада «На 3 месяца отзывный - выгодный»</p>
+                    </div>
+                    <div class="hidd_div_but">
+                        <button id="hideContent" class="color_for_bot">Скрыть</button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article_inf">
+                <div>
+                    <p class="content_article">Хорошо вложенные деньги всегда работают на Вас.</p>
+                    <p class="content_article_p">От 3 месяцев и до 18,5% в BYN<br>От 3 месяцев и до 3.75% в USD</p>
+                </div>
+                <div> <input class="right_circle_but" type="submit" value=">"></div>
+            </article>
+            <article class="article_inf">
+                <div>
+                    <p class="content_article">Подберите оптимальный кредит под Ваши задачи.</p>
+                    <p class="content_article_p">Потребительские нужды</p>
+                </div>
+                <div> <input class="right_circle_but" type="submit" value=">"></div>
+            </article>
+        </section>
+
+        <div class="div_orenge">
+            <div class="style_for_text padd1 razmerni_div">Скачивай приложение “FeuerBank” на телефон прямо сейчас!
+            </div>
+            <div class="style_for_text2 padd1 razmerni_div">Управляй своими картами из любой точки мира
+                <p>Get the App</p>
+               <a href=""> <img src="/image/Badges.png" alt=""></a>
+            </div>
+
+            <img class="phon1" src="image/pngegg.png" alt="">
+            <img class="phon2" src="image/pngegg.png" alt="">
+        </div>
+        <div class="div_c_img">
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 18.png" alt="" />
+                    <figcaption>
+                        <h3>Депозиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 19.png" alt="" />
+                    <figcaption>
+                        <h3>Расчетно-кассовое обслуживание</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 20.png" alt="" />
+                    <figcaption>
+                        <h3>Кредиты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one">
+                <figure class="effect-text-three">
+                    <img src="image/Rectangle 21.png" alt="" />
+                    <figcaption>
+                        <h3>Зарплатные проекты</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <h2 class="news">Новости</h2>
+            <div class="hover-text-one2">
+                <figure class="effect-text-three2">
+                    <img src="image/Rectangle34.jpg" alt="" />
+                    <figcaption>
+                        <h3>Новости</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="hover-text-one2">
+                <figure class="effect-text-three2">
+                    <img src="image/Rectangle35.jpg" alt="" />
+                    <figcaption>
+                        <h3>Новости</h3>
+                        <p>Банк предлогает юридическим лицам и
+                            индивидуальным предпринимателям
+                            разместить свободные денежные ресурсы в депозиты </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <div class="div_white">
+            <div class="div_flex">
+                <div class="flex_elements">
+                    <div class="text_kurs">
+                        Курсы валют <span>09.09.2021</span>
+
+                    </div>
+
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'A')" id="defaultOpen">По картам</button>
+                        <button class="tablinks" onclick="openCity(event, 'B')">Наличные</button>
+                        <button class="tablinks" onclick="openCity(event, 'C')">НБРБ</button>
+                    </div>
+
+                    <div id="A" class="tabcontent">
+                        <div>
+                            <ul class="hr">
+                                <li></li>
+                                <li class="bank_li">Банк покупает</li>
+                                <li class="bank_li">Банк продает</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_USA.PNG" alt="" /> 1 USD</li>
+                                <li>2.493</li>
+                                <li>2.523</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_ES.PNG" alt="" /> 1 EUR</li>
+                                <li>2.953</li>
+                                <li>2.99</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_r.PNG" alt="" />100 RUB</li>
+                                <li>3.364</li>
+                                <li>3.463</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="B" class="tabcontent">
+                        <div>
+                            <ul class="hr">
+                                <li> <img class="flag" src="image/F_USA.PNG" alt="" />1 USD</li>
+                                <li>>10000</li>
+                                <li>2.464</li>
+                                <li>2.484</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_ES.PNG">1 EUR</li>
+                                <li>>10000</li>
+                                <li>2.953</li>
+                                <li>2.99</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_r.PNG" alt="" />100 RUB</li>
+                                <li>>60000</li>
+                                <li>3.364</li>
+                                <li>3.463</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="C" class="tabcontent">
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_USA.PNG" alt="" />1 USD</li>
+                                <li>2.4775</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_ES.PNG">1 EUR</li>
+
+                                <li>2.8603</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="hr">
+                                <li><img class="flag" src="image/F_r.PNG" alt="" />100 RUB</li>
+
+                                <li>3.4412</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="last_p">Все курсы валют</p>
+                </div>
+
+                <div class="flex_elements">
+
+                    <div class="tab text_kurs">
+                        <p>Конвертер валют</p>
+                        <button class="tablinks" onclick="openCity2(event, 'L2')" id="defaultOpen2">Хочу
+                            продать</button>
+                        <button class="tablinks" onclick="openCity2(event, 'P2')">Хочу купить</button>
+
+                    </div>
+                    <div id="L2" class="tabcontent2">
+                        <select id="select_many" name="pokypka">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                        <select id="select_many" name="prodaja">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                    </div>
+                    <div id="P2" class="tabcontent2">
+                        <select id="select_many" name="pokypka">
+                            <option value="1000">133333000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                        <select id="select_many" name="prodaja">
+                            <option value="1000">1000</option>
+                            <option value="2000">2000</option>
+                            <option value="3000">3000</option>
+                            <option value="4000">4000</option>
+                        </select>
+                    </div>
+                    <p class="last_p2">Для расчета используются наличные курсы обмена валют</p>
+                </div>
+
+
+                <div class="flex_elements ">
+                    <div class="text_kurs">Драгоценные металлы</div>
+                    <div class="flex_range2">
+                        <input id="example1" class="input_mass" type="range" min="1" max="100" step="1"
+                            onchange="textbox1.value = example1.value" />
+                        <input id="textbox1" type="text" />
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li></li>
+                            <li class="bank_li">Банк покупает</li>
+                            <li class="bank_li">Банк продает</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li><input name="gold_silver_platina" type="radio" value="gold">Золото</li>
+                            <li>1555</li>
+                            <li>1800</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li><input name="gold_silver_platina" type="radio" value="silver">Серебро</li>
+                            <li>32</li>
+                            <li>70</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hr">
+                            <li><input name="gold_silver_platina" type="radio" value="platina">Платина</li>
+                            <li>630</li>
+                            <li>1290</li>
+                        </ul>
+                    </div>
+
+                    <p class="last_p">Подробная информация</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="foot_flex">
+        <div class="foot_divs">
+            <ul>
+                <li><a class="foot_li_first" href="">О Банке</a> </li>
+                <li><a class="foot_li" href="">Финансовые показатели</a> </li>
+                <li><a class="foot_li" href="">Достижения и награды</a> </li>
+                <li><a class="foot_li" href="">Пресс-центр</a> </li>
+                <li><a class="foot_li" href="">Работа в банке</a> </li>
+                <li><a class="foot_li" href="">Обработка данных пользователя</a> </li>
+                <li><a class="foot_li" href="">Аналитика данных</a> </li>
+                <li><a class="foot_li" href="">Обращения граждан и юр. лиц</a> </li>
+                <li><a class="foot_li" href="">Закупки</a> </li>
+            </ul>
+        </div>
+        <div class="foot_divs">
+            <ul>
+                <li><a class="foot_li_first"> Станьте клиентом</a></li>
+                <li><a class="foot_li">Отделения и банкоматы</a></li>
+                <li><a  class="foot_li">Часто задаваемые вопросы</a></li>
+                <li><a  class="foot_li"> Пенсионное обслуживание</a></li>
+                <li><a  class="foot_li"> Курсы валют</a></li>
+                <li><a  class="foot_li"> Вклады (депозиты)</a></li>
+                <li><a  class="foot_li"> Кредиты</a></li>
+                <li><a  class="foot_li"> Банковские карты</a></li>
+
+            </ul>
+        </div>
+        <div class="foot_divs">
+            <ul>
+                <li><a  class="foot_li_first">Контакт-центр</a></li>
+                <li ><a class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (44) 123-45-67 <br>
+                    </a> <span class="foot_small_text">А1</span> </li>
+                <li><a  class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (33) 123-45-67 <br>
+                    </a><span class="foot_small_text"> МТС</span></li>
+                <li ><a class="foot_li"><img class="img_svg " src="/image/svg/phone-volume.svg" alt="">
+                    (25) 123-45-67<br> </a></li>
+                    <li>
+                    <span class="foot_small_text">
+                        Life:) <br>* Звонок платный<br> в соответствии
+                        с тарифами<br> оператора мобильной связи</span>
+
+                </li>
+
+            </ul>
+        </div>
+        <div class="foot_divs">
+            
+            <li class="foot_li_first"><a class="foot_li_first" href="">
+                Мобильное приложение</a>
+            </li>
+            <li class="foot_li">
+                <a href="">
+                <img class="foot_li_app" src="/image/Aple.PNG" alt=""></a>
+            </li>
+
+            <li class="foot_li_first"><a href="">
+                <img class="foot_li_app" src="/image/play.PNG" alt=""></a>
+            </li>
+            <li class="foot_li">
+                <a href="https://www.facebook.com/" target="blank" title="facebook">
+                    <svg class="style_svg" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="style_path"
+                            d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" />
+                    </svg>
+                </a>
+                <a href="https://twitter.com/" target="blank" title="twiter">
+                    <svg class="style_svg" width="24" height="24" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="style_path"
+                            d="M19.995 6.68799C20.8914 6.15208 21.5622 5.30823 21.882 4.31399C21.0397 4.81379 20.118 5.16587 19.157 5.35499C17.8246 3.94552 15.7135 3.60251 14.0034 4.51764C12.2933 5.43277 11.4075 7.37948 11.841 9.26999C8.39062 9.09676 5.17598 7.4669 2.99702 4.78599C1.85986 6.74741 2.44097 9.25477 4.32502 10.516C3.64373 10.4941 2.97754 10.3096 2.38202 9.97799C2.38202 9.99599 2.38202 10.014 2.38202 10.032C2.38241 12.0751 3.82239 13.8351 5.82502 14.24C5.19308 14.4119 4.53022 14.4372 3.88702 14.314C4.45022 16.0613 6.06057 17.2583 7.89602 17.294C6.37585 18.4871 4.49849 19.1342 2.56602 19.131C2.22349 19.1315 1.88123 19.1118 1.54102 19.072C3.50341 20.333 5.78739 21.0023 8.12002 21C11.3653 21.0223 14.484 19.7429 16.7787 17.448C19.0734 15.1531 20.3526 12.0342 20.33 8.78899C20.33 8.60299 20.3257 8.41799 20.317 8.23399C21.1575 7.62659 21.8828 6.87414 22.459 6.01199C21.676 6.35905 20.8455 6.58691 19.995 6.68799Z"
+                            fill="#E1D5D3" />
+                    </svg>
+                </a>
+                <a href="https://vk.com/" target="blank" title="ВК">
+                    <svg class="style_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px"
+                        height="48px">
+                        <path class="style_path"
+                            d="M45.763,35.202c-1.797-3.234-6.426-7.12-8.337-8.811c-0.523-0.463-0.579-1.264-0.103-1.776 c3.647-3.919,6.564-8.422,7.568-11.143C45.334,12.27,44.417,11,43.125,11l-3.753,0c-1.237,0-1.961,0.444-2.306,1.151 c-3.031,6.211-5.631,8.899-7.451,10.47c-1.019,0.88-2.608,0.151-2.608-1.188c0-2.58,0-5.915,0-8.28 c0-1.147-0.938-2.075-2.095-2.075L18.056,11c-0.863,0-1.356,0.977-0.838,1.662l1.132,1.625c0.426,0.563,0.656,1.248,0.656,1.951 L19,23.556c0,1.273-1.543,1.895-2.459,1.003c-3.099-3.018-5.788-9.181-6.756-12.128C9.505,11.578,8.706,11.002,7.8,11l-3.697-0.009 c-1.387,0-2.401,1.315-2.024,2.639c3.378,11.857,10.309,23.137,22.661,24.36c1.217,0.12,2.267-0.86,2.267-2.073l0-3.846 c0-1.103,0.865-2.051,1.977-2.079c0.039-0.001,0.078-0.001,0.117-0.001c3.267,0,6.926,4.755,8.206,6.979 c0.368,0.64,1.056,1.03,1.8,1.03l4.973,0C45.531,38,46.462,36.461,45.763,35.202z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/" target="blank" title="youtube">
+                    <svg class="style_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="style_path"
+                            d="M12.006 19.012H11.986C11.924 19.012 5.721 19 4.156 18.575C3.29543 18.3432 2.62335 17.6707 2.392 16.81C2.11058 15.2224 1.97469 13.6123 1.986 12C1.97873 10.385 2.11831 8.77271 2.403 7.183C2.64071 6.32151 3.30983 5.64595 4.169 5.4C5.691 5 11.723 5 11.979 5H12C12.063 5 18.282 5.012 19.831 5.437C20.6898 5.67001 21.3605 6.3411 21.593 7.2C21.8834 8.79354 22.0197 10.4113 22 12.031C22.007 13.644 21.8671 15.2543 21.582 16.842C21.3477 17.7016 20.6752 18.3726 19.815 18.605C18.295 19.008 12.262 19.012 12.006 19.012ZM10.006 9.005L10.001 15.005L15.213 12.005L10.006 9.005Z"
+                            fill="#E1D5D3" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/?hl=ru" target="blank" title="instagram">
+                    <svg class="style_svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path class="style_path"
+                            d="M12.002 21.041C9.54195 21.041 9.25195 21.028 8.29195 20.986C7.54332 20.9614 6.80439 20.8092 6.10695 20.536C4.90026 20.0664 3.94609 19.1119 3.47695 17.905C3.21426 17.205 3.07257 16.4655 3.05795 15.718C3.00195 14.76 3.00195 14.446 3.00195 12.005C3.00195 9.538 3.01495 9.25 3.05795 8.295C3.07289 7.54853 3.21457 6.81001 3.47695 6.111C3.94558 4.90253 4.9013 3.94718 6.10995 3.479C6.8086 3.21521 7.5473 3.07315 8.29395 3.059C9.24895 3.005 9.56295 3.005 12.002 3.005C14.482 3.005 14.767 3.018 15.712 3.059C16.4605 3.07327 17.2012 3.21531 17.902 3.479C19.1103 3.94771 20.0658 4.90288 20.535 6.111C20.8021 6.8202 20.9445 7.57026 20.956 8.328C21.012 9.286 21.012 9.59901 21.012 12.039C21.012 14.479 20.998 14.799 20.956 15.746C20.9411 16.4942 20.799 17.2344 20.536 17.935C20.0656 19.1427 19.11 20.0976 17.902 20.567C17.2022 20.8292 16.4631 20.9709 15.716 20.986C14.761 21.041 14.448 21.041 12.002 21.041ZM11.968 4.588C9.52195 4.588 9.26795 4.6 8.31295 4.643C7.74294 4.65056 7.17843 4.75575 6.64395 4.954C5.85471 5.25601 5.23018 5.878 4.92495 6.666C4.72517 7.2063 4.61996 7.77698 4.61395 8.353C4.56095 9.322 4.56095 9.576 4.56095 12.005C4.56095 14.405 4.56995 14.696 4.61395 15.659C4.62291 16.2292 4.72805 16.7938 4.92495 17.329C5.23063 18.1165 5.85505 18.738 6.64395 19.04C7.17807 19.2396 7.7428 19.3448 8.31295 19.351C9.28095 19.407 9.53595 19.407 11.968 19.407C14.421 19.407 14.675 19.395 15.622 19.351C16.1924 19.3441 16.7573 19.2389 17.292 19.04C18.0764 18.7354 18.6969 18.1153 19.002 17.331C19.2014 16.7903 19.3065 16.2193 19.313 15.643H19.324C19.367 14.687 19.367 14.432 19.367 11.989C19.367 9.54601 19.356 9.289 19.313 8.334C19.304 7.76446 19.1988 7.20052 19.002 6.666C18.6976 5.88058 18.077 5.2593 17.292 4.954C16.7574 4.75475 16.1924 4.64953 15.622 4.643C14.655 4.588 14.402 4.588 11.968 4.588ZM12.002 16.624C10.1319 16.6252 8.44537 15.4997 7.72882 13.7725C7.01226 12.0452 7.40686 10.0563 8.72858 8.73347C10.0503 7.4106 12.0388 7.01428 13.7667 7.72934C15.4946 8.4444 16.6215 10.13 16.622 12C16.6192 14.5511 14.553 16.619 12.002 16.624ZM12.002 8.998C10.3451 8.998 9.00195 10.3412 9.00195 11.998C9.00195 13.6549 10.3451 14.998 12.002 14.998C13.6588 14.998 15.002 13.6549 15.002 11.998C14.9981 10.3427 13.6572 9.00185 12.002 8.998ZM16.802 8.28501C16.2074 8.2828 15.7269 7.79959 15.728 7.20501C15.7291 6.61043 16.2114 6.12901 16.806 6.12901C17.4005 6.12901 17.8828 6.61042 17.884 7.205C17.8842 7.49187 17.7702 7.76703 17.5672 7.96968C17.3642 8.17234 17.0888 8.2858 16.802 8.28501Z"
+                            fill="#E1D5D3" />
+                    </svg>
+                </a>
+            </li>
+            </ul>
+        </div>
+        </ul>
+    </footer>
+    <script>
+        let content = document.getElementById("Id_content")
+        let show = document.getElementById("showContent")
+        let hide = document.getElementById("hideContent")
+
+        show.addEventListener("click", () => {
+
+            content.style.visibility = "visible"
+        })
+
+        hide.addEventListener("click", () => {
+            content.style.visibility = "hidden"
+        })
+        /*------------таб меню------------*/
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+      
+        document.getElementById("defaultOpen").click();
+        /*-------------------------таб меню номер2----------------*/
+        function openCity2(evt2, cityName2) {
+            var i2, tabcontent2, tablinks2;
+            tabcontent2 = document.getElementsByClassName("tabcontent2");
+            for (i2 = 0; i2 < tabcontent2.length; i2++) {
+                tabcontent2[i2].style.display = "none";
+            }
+            tablinks2 = document.getElementsByClassName("tablinks2");
+            for (i2 = 0; i2 < tablinks2.length; i2++) {
+                tablinks2[i2].className = tablinks2[i2].className.replace(" active", "");
+            }
+            document.getElementById(cityName2).style.display = "block";
+            evt2.currentTarget.className += " active";
+        }
+
+        
+        document.getElementById("defaultOpen2").click();
+
+    </script>
 </body>
+
 </html>
