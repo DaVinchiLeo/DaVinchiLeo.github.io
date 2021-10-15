@@ -2,9 +2,8 @@ html {
   background-color: #181727;
   display: grid;
 }
-a{
-  text-decoration:none;
-
+a {
+  text-decoration: none;
 }
 a:hover {
   border-top: solid 3px #fe3406;
@@ -12,7 +11,7 @@ a:hover {
   filter: drop-shadow(0 0 5px #fe3406);
   cursor: pointer;
 }
-.a_logo:hover{
+.a_logo:hover {
   filter: drop-shadow(0 0 5px #fe3406);
   cursor: pointer;
 }
@@ -112,10 +111,10 @@ footer {
   background-repeat: no-repeat;
   height: 431px;
 }
-.div_nom2{
-  background:url(image/komp.png) right;
+.div_nom2 {
+  background: url(image/komp.png) right;
   background-repeat: no-repeat;
-  background-size:  100%;
+  background-size: 100%;
   height: 431px;
 }
 .padd1 {
@@ -626,7 +625,6 @@ ul.hr li img {
   letter-spacing: 0em;
   text-align: left;
   padding-bottom: 25px;
-  
 }
 .foot_li {
   color: #cdc4c2;
@@ -674,6 +672,138 @@ ul.hr li img {
 .style_path {
   fill: rgb(218, 218, 218);
 }
-.style_path:hover{
-  fill:#fe3406;
+.style_path:hover {
+  fill: #fe3406;
+}
+/*-----------отдельные стили для бизнеса--------------*/
+.div_operation {
+  width: 100%;
+  max-width: 1440px;
+  height: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+.div_podpis {
+  width: 35%;
+  height: 100%;
+}
+.div_podpis_p {
+  font-family: "Nunito";
+  font-size: 36px;
+  font-weight: 700;
+  padding: 46px 0 0 120px;
+}
+.div_spisok {
+  width: 60%;
+}
+.div_podpis_per {
+  font-family: "Nunito";
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  padding: 65px 0 0 80px;
+}
+.div_podpis_spisok {
+  text-align: center;
+  padding: 25px 0 38px 60px;
+  font-family: "Nunito";
+  font-size: 16px;
+}
+.podpis_li {
+  padding-top: 25px;
+}
+.podpis_li2 {
+  padding:25px 0 0 30px;
+}
+.podpis_li2 span {
+  font-family: "Nunito";
+  font-size: 9px;
+  font-weight: 400;
+}
+.scrol_content {
+  width: 65%;
+  height: 100%;
+  min-width: 900px;
+  display: flex;
+ align-items: center;
+  overflow-x: auto;
+  
+}
+
+.first-p{
+  font-family: "Nunito";
+  font-size: 24px;
+  font-weight: 700;
+  color: #fe3406;
+  padding: 30px 30px 0 30px
+}
+.second-p{
+  font-family: "Nunito";
+  font-size: 10px;
+  font-weight: 300;
+  padding: 5px 30px 0 30px
+}
+.scrol_element ul {
+  padding: 25px 0 38px 0;
+  font-family: "Nunito";
+  font-size: 16px;
+}
+.scrol_element_input {
+  background-color: #fe3406;
+  color: #fcfcfc;
+  border-radius: 25px;
+  border: none;
+  font-family: "Nunito";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 40px;
+  width: 125px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 0 10px 0px 30px;
+  margin-left: 30px;
+}
+.scrol_element_input2 {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 25px;
+  border: none;
+  font-family: "Nunito";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  height: 40px;
+  width: 125px;
+
+  padding: 0 10px 0px 30px;
+}
+.scrol_element_input:hover,
+.scrol_element_input2:hover{
+  color: rgb(0, 0, 0);
+  border: solid 2px rgb(0, 0, 0);
+}
+.scrol_element {
+  width: 291px;
+  min-width: 291px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin: 30px;
+}
+.scrol_element:hover{
+  width: 300px;
+  min-width: 300px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(235, 34, 34, 0.5);
+  overflow: hidden;
+  margin: 45px;
 }
