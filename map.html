@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link type="image/png" sizes="32x32" rel="icon" href="/image/logo_f.png">
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-
-        <title>Лучший банк на свете</title>
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link type="image/png" sizes="32x32" rel="icon" href="/image/logo_f.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>FeuerBankMap</title>
+</head>
 
 <body>
     <header>
@@ -35,177 +32,66 @@
                 <img src="/image/svg/hamburger.svg" alt="">
             </div>
         </div>
-        <div class="white_div">
-            <ul class="glav_menu">
-                <li class="ul_in_line menu_li"><a href="">Карты</a></li>
-                <li class="ul_in_line menu_li"><a href="">Кредиты</a></li>
-                <li class="ul_in_line menu_li"><a href="">Депозиты</a></li>
-                <li class="ul_in_line menu_li"><a href="">Расчетно-кассовое обслуживание</a></li>
-                <li class="ul_in_line menu_li"><a href="">Дистанционное обслуживание</a></li>
-                <li class="ul_in_line menu_li"><a href="">Ещё...</a></li>
-            </ul>
-            <input class="color_for_bot position_right" type="submit" value="Интернет банкинг">
-        </div>
     </header>
     <main>
-        <div class="div_nom2">
-            <p class="style_for_text_2 padd1">Кредиты для бизнеса</p>
-            <p class="style_for_text2_2 padd2">Привлекательные условия кредитования
-            </p>
-            <div class="padd2"> <input class="color_for_bot padd3" type="submit" value="Подробнее">
-            </div>
-        </div>
+        <aside>
+            <section>
+                <article class="form_aside">
+                    
+                        <div class="map_form">
+                            <label class="Width_Height label_map">
+                                Город </label>
+                            <select class="Width_Height label_map" name="sity" id="sity">
+                                <option value="minsk">Минск</option>
+                                <option value="minsk">Брест</option>
+                                <option value="minsk">Витебск</option>
+                                <option value="minsk">Гомель</option>
+                                <option value="minsk">Гродно</option>
+                                <option value="minsk">Могилев</option>
+                            </select>
+                            <input type="checkbox" name="">
+                           <label class="label_map">Сначала ближайшие</label> 
+                        </div>
+                        <div class="map_form">
+                            <label class="Width_Height label_map">
+                                Объекты </label>
+                            <select class="Width_Height label_map" name="Objects" id="Objects">
+                                <option value="Departments">Отделения</option>
+                                <option value="ATM">Банкоматы</option>
+                                <option value="Info kiosks">Инфокиоски</option>
+                                <option value="Offis">Офисы</option>
+                                <option value="))">Коллекторские участки</option>
+                            </select>
+                            <input type="checkbox" name="">
+                           <label class="label_map">Работают сейчас</label> 
+                        </div>
+                        <div class="map_form">
+                            <label class="Width_Height label_map">
+                                Оказываемые услуги </label>
+                            <select class="Width_Height label_map" name="services" id="services">
+                                <option value="Repayment of a loan">Погашение кредитов</option>
+                                <option value="Payments">Платежи (любые)</option>
+                                <option value="Sale of currency by the bank">Продажа валюты банком</option>
+                                <option value="Replenishment of cards">Пополнение карт (бел. рублями)</option>
+                                <option value="Replenishment of cards currency">Пополнение карт (ин. валютой)</option>
+                                <option value="Cash withdrawal by cards">Снятие наличных по картам</option>
+                                <option value="Buying currency by the bank">Покупка валюты банком</option>
+                            </select>
+                            <input type="checkbox" name="">
+                           <label class="label_map">Сначала ближайшие</label> 
+                        </div>
+                        
+                </article>
+                <article>
+                    <iframe class="FeuerBankMap"
+                        src="https://www.google.com/maps/d/embed?mid=1Q_Bb0D09wMimEyPKQ7yhNdd9dB79Xu4O"></iframe>
+                </article>
+            </section>
 
-        <div class="div_operation">
-            <div class="div_podpis">
-                <p class="div_podpis_p">Расчетные операции</p>
-                <div class="div_spisok">
-                    <p class="div_podpis_per">Пакет операций:</p>
-                    <ul class="div_podpis_spisok">
-                        <li class="podpis_li">Абоненская плата</li>
-                        <hr>
-                        <li class="podpis_li">Количество платежей</li>
-                        <hr>
-                        <li class="podpis_li">Карты</li>
-                        <hr>
-                        <li class="podpis_li">Открытие счета</li>
-                        <hr>
-                        <li class="podpis_li">Интернет-банк</li>
-                        <hr>
-                        <li class="podpis_li">Зарплатный проект</li>
-                        <hr>
-                    </ul>
-                </div>
-            </div>
+        </aside>
 
-            <div class="scrol_content">
-                <div class="scrol_element">
-                    <p class="first-p">Свой счет</p>
-                    <p class="second-p">Для индивидуальных предпринимателей</p>
-                    <ul>
-                        <li class="podpis_li2">30 BYN/месяц</li>
-                        <hr>
-                        <li class="podpis_li2">Безлимит в BYN <br><span>1 BYN за платеж сверх включенных</span></li>
-                        <hr>
-                        <li class="podpis_li2">Бесплатные карты <br><span>Выпуск личной карточки для ИП в рамках
-                                пакета</span> </li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">от 0,1%</li>
-                        <hr>
-                    </ul>
-                    <input class="scrol_element_input" type="submit" value="Оформить">
-                    <input class="scrol_element_input2" type="submit" value="Подробнее">
-                </div>
-                <div class="scrol_element">
-                    <p class="first-p">Точный счет</p>
-                    <p class="second-p">Для динамичных компаний</p>
-                    <ul>
-                        <li class="podpis_li2">45 BYN/месяц</li>
-                        <hr>
-                        <li class="podpis_li2">До 100 платежей в BYN/месяц <br><span>1 BYN за платеж сверх
-                                включенных</span></li>
-                        <hr>
-                        <li class="podpis_li2">Бесплатные карты <br><span>Бесплатный выпуск зарплатных и корпоративных
-                                карт</span> </li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">от 0,1%</li>
-                        <hr>
-                    </ul>
-                    <input class="scrol_element_input" type="submit" value="Оформить">
-                    <input class="scrol_element_input2" type="submit" value="Подробнее">
-                </div>
-                <div class="scrol_element">
-                    <p class="first-p">Первый счет</p>
-                    <p class="second-p">Для начинающий свой бизнес</p>
-                    <ul>
-                        <li class="podpis_li2">15 BYN/месяц</li>
-                        <hr>
-                        <li class="podpis_li2">5 платежей в BYN/месяц<br><span>1 BYN за платеж сверх включенных</span>
-                        </li>
-                        <hr>
-                        <li class="podpis_li2">Бесплатные карты <br><span>Выпуск корпоративной карточки сроком действия
-                                2 года, личная для ИП</span> </li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">от 0,1%</li>
-                        <hr>
-                    </ul>
-                    <input class="scrol_element_input" type="submit" value="Оформить">
-                    <input class="scrol_element_input2" type="submit" value="Подробнее">
-                </div>
-                <div class="scrol_element">
-                    <p class="first-p">Супер-счет</p>
-                    <p class="second-p">Для начинающий свой бизнес</p>
-                    <ul>
-                        <li class="podpis_li2">170 BYN/месяц</li>
-                        <hr>
-                        <li class="podpis_li2">Безлимит платежей в BYN</li>
-                        <hr>
-                        <li class="podpis_li2">Бесплатные карты <br><span>Выпуск корпоративной карточки сроком действия
-                                2 года, личная для ИП</span> </li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">Есть</li>
-                        <hr>
-                        <li class="podpis_li2">от 0,1%</li>
-                        <hr>
-                    </ul>
-                    <input class="scrol_element_input" type="submit" value="Оформить">
-                    <input class="scrol_element_input2" type="submit" value="Подробнее">
-                </div>
-            </div>
-
-        </div>
-        <div>
-            <p class="div_zagolovok">Кредитоварие бизнеса</p>
-        </div>
-        <div class="div_for_bisnes">
-            <div class="div_for_bisnes_elem1">
-                <p class="div_for_bisnes_elem1_z">Преимущества кредитов</p>
-                <div class="div_for_bisnes_elem1_content"><img src="/image/svg/calendar.svg" alt="">
-                    <p>удобные графики погашения;</p>
-                </div>
-                <div class="div_for_bisnes_elem1_content"><img src="/image/svg/clock.svg" alt="">
-                    <p>возможность получить отсрочку по погашению основного долга;</p>
-                </div>
-                <div class="div_for_bisnes_elem1_content"><img src="/image/svg/list.svg" alt="">
-                    <p>различные способы обеспечения исполнения обязательств.</p>
-                </div>
-            </div>
-            <div class="div_for_bisnes_elem2">
-                <p class="div_for_bisnes_elem2_z">Овердрафтный кредит</p>
-                <p class="div_for_bisnes_elem2_content_p">Устранение платежных разрывов, возникающих в процессе
-                    финансово-хояйственной деятельности</p>
-                <div class="div_flex">
-                    <div>
-                        <p class="valyta">BYN, USD, EUR, RUB</p>
-                        <p class="valyta_small">валюта</p>
-                        <input class="valyta_input" type="submit" value="Подробнее">
-                    </div>
-                    <div>
-                        <p class="valyta">до 100 000 BYN</p>
-                        <p class="valyta_small">сумма кредита</p>
-                        <div class="input_valyta_padd">
-                        <input class="valyta_input2" type="submit" value=&larr;>
-                        <input class="valyta_input2" type="submit" value=&rarr;>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
+
     <footer class="foot_flex">
         <div class="foot_divs">
             <ul>
@@ -310,7 +196,6 @@
         </div>
         </ul>
     </footer>
-
 
 </body>
 
