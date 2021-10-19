@@ -15,6 +15,24 @@ a:hover {
   filter: drop-shadow(0 0 5px #fe3406);
   cursor: pointer;
 }
+
+.hidden_div{
+  position: absolute;
+  visibility: hidden;
+}
+.header_svg{
+  width:24px;
+   height: 24px;
+}
+.header_svg_path:hover{
+  fill:#fe3406;
+  width: 34px;
+  height: 34px;
+ }
+.header_svg:hover .hidden_div{
+  visibility: visible;
+  border: solid 5px #fe3406 ;
+}
 .text {
   color: #e1d5d3;
 }
@@ -185,6 +203,7 @@ footer {
   width: 250px;
   right: 10px;
   top: 100px;
+  display: block;
 }
 
 .content {
@@ -265,7 +284,7 @@ footer {
 }
 .hidd_div_form {
   width: 70%;
-  height: 100px;
+  height: 100px;/*заменить при респонсив*/
   display: flex;
   flex-wrap: wrap;
 }
@@ -275,14 +294,13 @@ footer {
   width: 250px;
   height: 50px;
   font-size: 25px;
-  background-color: black;
-  color: #cdc4c2;
+  background-color: rgb(223, 215, 215);
+  color: #000;
 }
 .hidd_div_form p {
-  padding: 25px;
+  padding: 5px;
   width: 40%;
-  padding-left: 25px;
-}
+  }
 .hidd_div_but {
   width: 100%;
   text-align: center;
@@ -586,9 +604,10 @@ ul.hr li img {
   width: 395px;
   height: 60px;
   margin: 25px 25px 0 25px;
+  font-size: 24px;
 }
 #select_many:hover {
-  background-color: black;
+  background-color: #fe3406;
 }
 .progress {
   width: 100%;
@@ -955,4 +974,81 @@ ul.hr li img {
     font-size: 16px;
     font-weight: 300;
     
+  }
+  /*-------------burger menu-------------------*/
+  #toggle {
+    opacity: 0;
+  }
+  .for_bottom {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .for_bottom > span,
+  .for_bottom > span::before,
+  .for_bottom > span::after {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #E1D5D3;
+  }
+  .for_bottom > span::before {
+    content: "";
+    top: -6px;
+  }
+  .for_bottom > span::after {
+    content: "";
+    top: 7px;
+  }
+  .links_menu {
+    display: block;
+    position: absolute;
+    visibility: hidden; 
+    top: 80px;
+    right: 0px;
+    width: 100%;
+    
+    margin: 0;
+    list-style: none;
+    text-align: start;
+    background-color: #181727;
+    z-index: 1;
+    }
+  .my_link {
+    display: block;
+    padding: 12px 24px;
+    color: #fe3406;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    width: 250px;
+    font-family: "Nunito";
+  }
+  .links_menu li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: solid 3px #E1D5D3;
+  }
+  /*.my_link:hover {
+    background-color: #359bc7;
+  }*/
+  #toggle:checked ~ .for_bottom > span {
+    transform: rotate(45deg);
+  }
+  #toggle:checked ~ .for_bottom > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #toggle:checked ~ .for_bottom > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #toggle:checked ~ .links_menu {
+    visibility: visible;
+    left: 0;
   }
